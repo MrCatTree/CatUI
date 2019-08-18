@@ -1,0 +1,97 @@
+body {
+  color: #333;
+}
+
+a {}
+
+a:hover {}
+
+pre {
+  color: #333;
+  background: #FFF;
+}
+
+/* ::selection */
+::selection,
+.input::selection,
+input::selection,
+textarea::selection {
+  color: #FFF;
+  background-color: rgba(219, 190, 131, .8);
+}
+
+.button {
+  border-color: #000;
+}
+
+.button:hover,
+input[type="button"].button:hover {
+  background-color: #FFF;
+}
+
+.badge{
+  background-color: red;
+}
+
+/* table border line color */
+.cat-table tr,
+.cat-table .cat-table-__row {
+  border-top-color: #000;
+}
+
+.cat-table thead tr,
+.cat-table tbody tr,
+.cat-table tfoot tr {
+  border-bottom-color: #000;
+}
+
+.cat-table .cat-table-__thead .cat-table-__row,
+.cat-table .cat-table-__tbody .cat-table-__row:last-child,
+.cat-table .cat-table-__tfoot .cat-table-__row {
+  border-bottom-color: #000;
+}
+
+.cat-table-__border tr th,
+.cat-table-__border tr td,
+.cat-table-__border .cat-table-__row .cat-table-__cell {
+  border-color: #000;
+}
+
+/* table striped background color*/
+.cat-table-__striped tbody tr:nth-child(odd),
+.cat-table-__striped tr:nth-child(odd),
+.cat-table-__striped .cat-table-__tbody .cat-table-__row:nth-child(odd),
+.cat-table-__striped .cat-table-__row:nth-child(odd) {
+  background-color: rgba(219, 190, 131, .35);
+}
+
+.cat-table-__striped tbody tr:nth-child(even),
+.cat-table-__striped tr:nth-child(even),
+.cat-table-__striped .cat-table-__tbody .cat-table-__row:nth-child(even),
+.cat-table-__striped .cat-table-__row:nth-child(even) {
+  background-color: rgba(219, 190, 131, .15);
+}
+
+/* table hover background color*/
+.cat-table-__hover tbody tr:hover,
+.cat-table-__hover tr:hover,
+.cat-table-__hover .cat-table-__tbody .cat-table-__row:hover,
+.cat-table-__hover .cat-table-__row:hover {
+  background-color: rgba(219, 190, 131, .15);
+}
+
+/* thead tfoot background color */
+.cat-table-__striped.cat-table-__hover tbody tr:hover,
+.cat-table-__hover tbody.cat-table-__striped tr:hover,
+.cat-table-__striped.cat-table-__hover .cat-table-__tbody .cat-table-__row:hover,
+.cat-table-__hover .cat-table-__tbody.cat-table-__striped .cat-table-__row:hover {
+  background-color: transparent;
+}
+
+.cat-table-__hover thead tr,
+.cat-table-__striped thead tr,
+.cat-table tfoot tr,
+.cat-table .cat-table-__thead .cat-table-__row,
+.cat-table .cat-table-__tfoot .cat-table-__row {
+  background-color: transparent !important;
+}

@@ -2,476 +2,473 @@
 <html data-dpr="1">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-    <title>CatUI Demo and Test</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
-    <style media="screen">
-        .background_color {
-            background-color: rgb(105, 120, 150);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>CatUI Demo and Test</title>
+  <link rel="stylesheet" href="css/cat.style.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/cat.skin.css" charset="utf-8">
+  <style media="screen">
+    .background_color {
+      background-color: rgb(105, 120, 150);
+    }
 
-        .border_color {
-            border: 1px solid rgb(105, 120, 150);
-        }
+    .border_color {
+      border: 1px solid rgb(105, 120, 150);
+    }
 
-        .inline_block {
-            display: inline-block;
-        }
+    .inline_block {
+      display: inline-block;
+    }
 
-        .ul-inline>li {
-            display: inline-block;
-        }
-
-        li:first-child:nth-last-child(5),
-        li:first-child:nth-last-child(5)~li {}
-    </style>
+    .ul-inline>li {
+      display: inline-block;
+    }
+  </style>
 </head>
 
-<body style="background-color:#282C34;">
-    <header class="headerbar" style="background-color:#697896;">
-        <h1>This is header.</h1>
-    </header>
-    <div class="timeline">
-        <ul class="nav">
-            <li>
-                <a href="javascript:;">item1</a>
-            </li>
-            <li>
-                <a href="javascript:;">item2</a>
-            </li>
-            <li>
-                <a href="javascript:;">item3</a>
-            </li>
-        </ul>
+<body>
+  <header class="headerbar">
+    <h1>This is header.</h1>
+  </header>
+  <div class="timeline">
+    <ul class="nav">
+      <li>
+        <a href="javascript:;">item1</a>
+      </li>
+      <li>
+        <a href="javascript:;">item2</a>
+      </li>
+      <li>
+        <a href="javascript:;">item3</a>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+
+    <div class="fullpage">fullpage button</div>
+
+    <nav class="nav mag20-tb">
+      <ul>
+        <li>导航1</li>
+        <li>导航2</li>
+        <li>导航3</li>
+      </ul>
+    </nav>
+
+    <nav class="nav left">
+      <ul>
+        <li data-txt="Nav left 1">
+          <a href="javascript:;"></a>
+        </li>
+        <li data-txt="Nav left 2">
+          <a href="javascript:;"></a>
+        </li>
+        <li data-txt="Nav left 3">
+          <a href="javascript:;"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="nav right">
+      <ul>
+        <li data-txt="Nav right1">
+          <a href="javascript:;"></a>
+        </li>
+        <li data-txt="Nav right2">
+          <a href="javascript:;"></a>
+        </li>
+        <li data-txt="Nav right3">
+          <a href="javascript:;"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mag20-tb">
+      <h3>H</h3>
+      <h1>Hello,你好，我是 H1</h1>
+      <h2>Hello,你好，我是 H2</h2>
+      <h3>Hello,你好，我是 H3</h3>
+      <h4>Hello,你好，我是 H4</h4>
+      <h5>Hello,你好，我是 H5</h5>
+      <h6>Hello,你好，我是 H6</h6>
     </div>
-    <div class="main">
 
-        <div class="fullpage">fullpage button</div>
+    <article class="mag20-tb">
+      <h3>Article</h3>
+      <p class="text-justify">
+        文章内容：这是一篇文章内容，该内容包含使用了 text-justify, text-lineheight, text-letterspacing, text-wordspacing 样式，以及 text-ilbvmiddle
+        危险样式。你猜猜这里是用的是什么样式呢？you can try it, and tell me.
+      </p>
+      <p class="text-letterspacing-4">字符间距：有 2 4 6 三种间距，这里使用的是 4。</p>
+      <p class="text-wordspacing-8">word spacing: have 4 8 12 size. this use 8.</p>
+      <p class="text-lineheight-b15 border_color">这是1.5倍的行高</p>
+      <p class="text-lineheight-b20 border_color">这是2倍的行高，更高倍数的，请于自己的CSS上设置</p>
+      <p class="font24">text-ilbvmiddle：我可以让内容垂直“<span class="font12 text-ilbvmiddle background_color"
+          style="line-height:1em;">...</span>”居中，但是此举非常危险，可能会破坏盒子模型，请慎用。</p>
+    </article>
 
-        <nav class="nav mag20-tb">
-            <ul>
-                <li>导航1</li>
-                <li>导航2</li>
-                <li>导航3</li>
-            </ul>
-        </nav>
+    <section class="mag20-tb">
+      <h3>Section</h3>
+      <p>
+        组合元素：
+      </p>
+      <a href="javascript:;">A 链接文字</a>
+      <div>
+        <p>
+          内边距拥有 4 8 12 16 20 规格，以及每种规格都会有 lr 和 tb 两种不同的显示样式，这里使用的是 16
+        </p>
+        <span class="pad16 border_color">我是16</span>
+        <span class="pad16-tb border_color">我是16-tb</span>
+        <span class="pad16-lr border_color">我是16-lr</span>
+        <p>
+          外边距拥有 4 8 12 16 20 规格，以及每种规格都会有 lr 和 tb 两种不同的显示样式，这里使用的是 16
+        </p>
+        <span class="inline_block mag16 background_color">我是16</span>
+        <span class="inline_block mag16-tb background_color">我是16-tb</span>
+        <span class="inline_block mag16-lr background_color">我是16-lr</span>
+      </div>
+      <ul class="list-inline">
+        <li>this ul li item1</li>
+        <li>this ul li item2</li>
+        <li>this ul li item3</li>
+        <li>this ul li item4</li>
+      </ul>
+      <p>
+        ul元素拥有 default 样式，该样式能重置成为浏览器默认样式，留出可更改空间。
+      </p>
+      <ul class="default">
+        <li>this ul li .default item1</li>
+        <li>this ul li .default item2</li>
+        <li>
+          this ul li .default item3
+          <ul>
+            <li>this ul.default ul item1</li>
+            <li>this ul.default ul item2</li>
+          </ul>
+        </li>
+        <li>this ul li .default item4</li>
+      </ul>
+    </section>
 
-        <nav class="nav left">
-            <ul>
-                <li data-txt="Nav left 1">
-                    <a href="javascript:;"></a>
-                </li>
-                <li data-txt="Nav left 2">
-                    <a href="javascript:;"></a>
-                </li>
-                <li data-txt="Nav left 3">
-                    <a href="javascript:;"></a>
-                </li>
-            </ul>
-        </nav>
+    <aside class="mag20-tb">
+      <h3>Section</h3>
+      <div>
+        <p>
+          按钮、input：
+        </p>
+        <button name="button" type="button">Button</button>
+        <input name="inputbutton" type="button" value="Input button">
+        <input name="name" type="text" value="Input text">
+        <input name="name" type="text" value="" placeholder="this is focus input">
+        <input name="name" type="email" value="email@amail.com">
+        <input name="name" type="url" value="Input url">
+        <p>
+          按钮、input、模拟按钮、验证样式：
+        </p>
+        <button class="button" name="button" type="button">Button</button>
+        <input class="button" name="inputbutton" type="button" value="Input button">
+        <a class="button" href="javascript:;">a button</a>
+        <input class="input" name="name" type="text" value="Input css text">
+        <input class="input" name="name" type="text" value="" placeholder="this is focus input">
+        <input class="input validate" name="name" type="email" value="email@amail.com">
+        <input class="input validate" name="name" type="url" value="Input url">
+        <p>
+          disable 样式，会为元素呈现出无法使用的状态
+        </p>
+        <p>
+          跨浏览器兼容性
+        </p>
+        <p>
+          如果为 &lt;button&gt; 元素添加 disabled 属性，Internet Explorer 9 及更低版本的浏览器将会把按钮中的文本绘制为灰色，并带有恶心的阴影，目前我们还没有解决办法。
+        </p>
+        <p>
+          如果 disable 使用在 &lt;a&gt; 元素上，则是通过 pointer-events: none 来禁止其链接的原始功能，但是这一 CSS
+          属性并未被标准化，浏览器的支持并不完全，为了安全起见，还是建议通过JavaScript来禁止链接的原始功能
+        </p>
+        <button class="button disable" name="button" type="button">Button</button>
+        <input class="button disable" name="inputbutton" type="button" value="Input button">
+        <a class="button disable" href="javascript:;">a button</a>
+        <input class="input disable" type="text" name="name" value="Input css text">
+      </div>
+    </aside>
 
-        <nav class="nav right">
-            <ul>
-                <li data-txt="Nav right1">
-                    <a href="javascript:;"></a>
-                </li>
-                <li data-txt="Nav right2">
-                    <a href="javascript:;"></a>
-                </li>
-                <li data-txt="Nav right3">
-                    <a href="javascript:;"></a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="mag20-tb">
-            <h3>H</h3>
-            <h1>Hello,你好，我是 H1</h1>
-            <h2>Hello,你好，我是 H2</h2>
-            <h3>Hello,你好，我是 H3</h3>
-            <h4>Hello,你好，我是 H4</h4>
-            <h5>Hello,你好，我是 H5</h5>
-            <h6>Hello,你好，我是 H6</h6>
-        </div>
-
-        <article class="mag20-tb">
-            <h3>Article</h3>
-            <p class="text-justify">
-                文章内容：这是一篇文章内容，该内容包含使用了 text-justify, text-lineheight, text-letterspacing, text-wordspacing 样式，以及 text-ilbvmiddle 危险样式。你猜猜这里是用的是什么样式呢？you can try it, and tell me.
-            </p>
-            <p class="text-letterspacing-4">字符间距：有 2 4 6 三种间距，这里使用的是 4。</p>
-            <p class="text-wordspacing-8">word spacing: have 4 8 12 size. this use 8.</p>
-            <p class="text-lineheight-b15 border_color">这是1.5倍的行高</p>
-            <p class="text-lineheight-b20 border_color">这是2倍的行高，更高倍数的，请于自己的CSS上设置</p>
-            <p class="font24">text-ilbvmiddle：我可以让内容垂直“<span class="font12 text-ilbvmiddle background_color" style="line-height:1em;">...</span>”居中，但是此举非常危险，可能会破坏盒子模型，请慎用。</p>
-        </article>
-
-        <section class="mag20-tb">
-            <h3>Section</h3>
-            <p>
-                组合元素：
-            </p>
-            <a href="javascript:;">A 链接文字</a>
-            <div>
-                <p>
-                    内边距拥有 4 8 12 16 20 规格，以及每种规格都会有 lr 和 tb 两种不同的显示样式，这里使用的是 16
-                </p>
-                <span class="pad16 border_color">我是16</span>
-                <span class="pad16-tb border_color">我是16-tb</span>
-                <span class="pad16-lr border_color">我是16-lr</span>
-                <p>
-                    外边距拥有 4 8 12 16 20 规格，以及每种规格都会有 lr 和 tb 两种不同的显示样式，这里使用的是 16
-                </p>
-                <span class="inline_block mag16 background_color">我是16</span>
-                <span class="inline_block mag16-tb background_color">我是16-tb</span>
-                <span class="inline_block mag16-lr background_color">我是16-lr</span>
+    <div class="mag20-tb">
+      <h3>Table</h3>
+      <p>
+        table 样式分为 table 与 自定义table
+      </p>
+      <p>
+        样式默认为无外边框，表格边框样式 table-border，表格行样式 table-striped，hover 样式 table-hover。
+      </p>
+      <p>
+        自定义table 跨列和跨行暂无法支持，如有需要请使用 table 元素。
+      </p>
+      <ul class="ul-inline">
+        <li>
+          <table class="cat-table cat-table-__hover">
+            <caption>This is Table default style</caption>
+            <thead class="thead">
+              <tr>
+                <th colspan="4">Table head</th>
+              </tr>
+            </thead>
+            <tfoot class="tfoot">
+              <tr>
+                <td colspan="2">Table foot</td>
+                <td colspan="2">Table foot</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>column1</td>
+                <td>column2</td>
+                <td>column3</td>
+                <td>column4</td>
+              </tr>
+              <tr>
+                <td>Row1</td>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+              </tr>
+              <tr>
+                <td>Row2</td>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+              </tr>
+              <tr>
+                <td>Row3</td>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>
+          <table class="cat-table cat-table-__border cat-table-__striped cat-table-__hover">
+            <caption>This is Table</caption>
+            <thead class="thead">
+              <tr>
+                <th>Table</th>
+                <th colspan="2">head</th>
+                <th>Table head</th>
+              </tr>
+            </thead>
+            <tfoot class="tfoot">
+              <tr>
+                <td colspan="2">Table foot</td>
+                <td colspan="2">Table foot</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>column1</td>
+                <td>column2</td>
+                <td>column3</td>
+                <td>column4</td>
+              </tr>
+              <tr>
+                <td>Row1</td>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+              </tr>
+              <tr>
+                <td>Row2</td>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+              </tr>
+              <tr>
+                <td>Row3</td>
+                <td>item1</td>
+                <td>item2</td>
+                <td>item3</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>
+          <div class="cat-table cat-table-__hover">
+            <div class="cat-table-__caption">
+              Custom Table default style
             </div>
-            <ul class="list-inline">
-                <li>this ul li item1</li>
-                <li>this ul li item2</li>
-                <li>this ul li item3</li>
-                <li>this ul li item4</li>
-            </ul>
-            <p>
-                ul元素拥有 default 样式，该样式能重置成为浏览器默认样式，留出可更改空间。
-            </p>
-            <ul class="default">
-                <li>this ul li .default item1</li>
-                <li>this ul li .default item2</li>
-                <li>
-                    this ul li .default item3
-                    <ul>
-                        <li>this ul.default ul item1</li>
-                        <li>this ul.default ul item2</li>
-                    </ul>
-                </li>
-                <li>this ul li .default item4</li>
-            </ul>
-        </section>
-
-        <aside class="mag20-tb">
-            <h3>Section</h3>
-            <div>
-                <p>
-                    按钮、input：
-                </p>
-                <button name="button" type="button">Button</button>
-                <input name="inputbutton" type="button" value="Input button">
-                <input name="name" type="text" value="Input text">
-                <input name="name" type="text" value="" placeholder="this is focus input">
-                <input name="name" type="email" value="email@amail.com">
-                <input name="name" type="url" value="Input url">
-                <p>
-                    按钮、input、模拟按钮、验证样式：
-                </p>
-                <button class="button" name="button" type="button">Button</button>
-                <input class="button" name="inputbutton" type="button" value="Input button">
-                <a class="button" href="javascript:;">a button</a>
-                <input class="input" name="name" type="text" value="Input css text">
-                <input class="input" name="name" type="text" value="" placeholder="this is focus input">
-                <input class="input validate" name="name" type="email" value="email@amail.com">
-                <input class="input validate" name="name" type="url" value="Input url">
-                <p>
-                    disable 样式，会为元素呈现出无法使用的状态
-                </p>
-                <p>
-                    跨浏览器兼容性
-                </p>
-                <p>
-                    如果为 &lt;button&gt; 元素添加 disabled 属性，Internet Explorer 9 及更低版本的浏览器将会把按钮中的文本绘制为灰色，并带有恶心的阴影，目前我们还没有解决办法。
-                </p>
-                <p>
-                    如果 disable 使用在 &lt;a&gt; 元素上，则是通过 pointer-events: none 来禁止其链接的原始功能，但是这一 CSS 属性并未被标准化，浏览器的支持并不完全，为了安全起见，还是建议通过JavaScript来禁止链接的原始功能
-                </p>
-                <button class="button disable" name="button" type="button">Button</button>
-                <input class="button disable" name="inputbutton" type="button" value="Input button">
-                <a class="button disable" href="javascript:;">a button</a>
-                <input class="input disable" type="text" name="name" value="Input css text">
+            <div class="cat-table-__thead">
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">column1</div>
+                <div class="cat-table-__cell">column2</div>
+                <div class="cat-table-__cell">column3</div>
+                <div class="cat-table-__cell">column4</div>
+              </div>
             </div>
-        </aside>
+            <div class="cat-table-__tbody">
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">Row1</div>
+                <div class="cat-table-__cell">item1</div>
+                <div class="cat-table-__cell">item2</div>
+                <div class="cat-table-__cell">item3</div>
+              </div>
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">Row2</div>
+                <div class="cat-table-__cell">item1</div>
+                <div class="cat-table-__cell">item2</div>
+                <div class="cat-table-__cell">item3</div>
+              </div>
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">Row3</div>
+                <div class="cat-table-__cell">item1</div>
+                <div class="cat-table-__cell">item2</div>
+                <div class="cat-table-__cell">item3</div>
+              </div>
+            </div>
+            <div class="cat-table-__tfoot">
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">__tfoot</div>
+                <div class="cat-table-__cell">__tfoot</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cat-table cat-table-__border cat-table-__striped cat-table-__hover">
+            <div class="cat-table-__caption">
+              Custom Table default style
+            </div>
+            <div class="cat-table-__thead">
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">column1</div>
+                <div class="cat-table-__cell">column2</div>
+                <div class="cat-table-__cell">column3</div>
+                <div class="cat-table-__cell">column4</div>
+              </div>
+            </div>
+            <div class="cat-table-__tbody">
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">Row1</div>
+                <div class="cat-table-__cell">item1</div>
+                <div class="cat-table-__cell">item2</div>
+                <div class="cat-table-__cell">item3</div>
+              </div>
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">Row2</div>
+                <div class="cat-table-__cell">item1</div>
+                <div class="cat-table-__cell">item2</div>
+                <div class="cat-table-__cell">item3</div>
+              </div>
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">Row3</div>
+                <div class="cat-table-__cell">item1</div>
+                <div class="cat-table-__cell">item2</div>
+                <div class="cat-table-__cell">item3</div>
+              </div>
+            </div>
+            <div class="cat-table-__tfoot">
+              <div class="cat-table-__row">
+                <div class="cat-table-__cell">__tfoot</div>
+                <div class="cat-table-__cell">__tfoot</div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
 
-        <div class="mag20-tb">
-            <h3>Table</h3>
-            <p>
-                table 样式分为 table 与 自定义table
-            </p>
-            <p>
-                样式默认为无外边框，表格边框样式 table-border，表格行样式 table-striped，hover 样式 table-hover。
-            </p>
-            <p>
-                自定义table 跨列和跨行暂无法支持，如有需要请使用 table 元素。
-            </p>
-            <ul class="ul-inline">
-                <li>
-                    <table class="table table-hover">
-                        <caption>This is Table default style</caption>
-                        <thead class="thead">
-                            <tr>
-                                <th colspan="4">Table head</th>
-                            </tr>
-                        </thead>
-                        <tfoot class="tfoot">
-                            <tr>
-                                <td colspan="2">Table foot</td>
-                                <td colspan="2">Table foot</td>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td>column1</td>
-                                <td>column2</td>
-                                <td>column3</td>
-                                <td>column4</td>
-                            </tr>
-                            <tr>
-                                <td>Row1</td>
-                                <td>item1</td>
-                                <td>item2</td>
-                                <td>item3</td>
-                            </tr>
-                            <tr>
-                                <td>Row2</td>
-                                <td>item1</td>
-                                <td>item2</td>
-                                <td>item3</td>
-                            </tr>
-                            <tr>
-                                <td>Row3</td>
-                                <td>item1</td>
-                                <td>item2</td>
-                                <td>item3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </li>
-                <li>
-                    <table class="table table-border table-hover">
-                        <caption>This is Table</caption>
-                        <thead class="thead">
-                            <tr>
-                                <th>Table</th>
-                                <th colspan="2">head</th>
-                                <th>Table head</th>
-                            </tr>
-                        </thead>
-                        <tfoot class="tfoot">
-                            <tr>
-                                <td colspan="2">Table foot</td>
-                                <td colspan="2">Table foot</td>
-                            </tr>
-                        </tfoot>
-                        <tbody class="table-striped">
-                            <tr>
-                                <td>column1</td>
-                                <td>column2</td>
-                                <td>column3</td>
-                                <td>column4</td>
-                            </tr>
-                            <tr>
-                                <td>Row1</td>
-                                <td>item1</td>
-                                <td>item2</td>
-                                <td>item3</td>
-                            </tr>
-                            <tr>
-                                <td>Row2</td>
-                                <td>item1</td>
-                                <td>item2</td>
-                                <td>item3</td>
-                            </tr>
-                            <tr>
-                                <td>Row3</td>
-                                <td>item1</td>
-                                <td>item2</td>
-                                <td>item3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </li>
-                <li>
-                    <div class="table">
-                        <div class="caption">
-                            Custom Table default style
-                        </div>
-                        <div class="table-thead">
-                            <dl class="table-row">
-                                <dt class="table-cell">column1</dt>
-                                <dd class="table-cell">column2</dd>
-                                <dt class="table-cell">column3</dt>
-                                <dd class="table-cell">column4</dd>
-                            </dl>
-                        </div>
-                        <div class="table-tbody">
-                            <dl class="table-row">
-                                <dt class="table-cell">Row1</dt>
-                                <dd class="table-cell">item1</dd>
-                                <dd class="table-cell">item2</dd>
-                                <dd class="table-cell">item3</dd>
-                            </dl>
-                            <dl class="table-row">
-                                <dt class="table-cell">Row2</dt>
-                                <dd class="table-cell">item1</dd>
-                                <dd class="table-cell">item2</dd>
-                                <dd class="table-cell">item3</dd>
-                            </dl>
-                            <dl class="table-row">
-                                <dt class="table-cell">Row3</dt>
-                                <dd class="table-cell">item1</dd>
-                                <dd class="table-cell">item2</dd>
-                                <dd class="table-cell">item3</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="table table-hover">
-                        <div class="caption">
-                            Custom Table no line
-                        </div>
-                        <div class="table-thead">
-                            <dl class="table-row">
-                                <dt class="table-cell">column1</dt>
-                                <dd class="table-cell">column2</dd>
-                                <dt class="table-cell">column3</dt>
-                                <dd class="table-cell">column4</dd>
-                            </dl>
-                        </div>
-                        <dl class="table-row">
-                            <dt class="table-cell">Row1</dt>
-                            <dd class="table-cell">item1</dd>
-                            <dd class="table-cell">item2</dd>
-                            <dd class="table-cell">item3</dd>
-                        </dl>
-                        <dl class="table-row">
-                            <dt class="table-cell">Row2</dt>
-                            <dd class="table-cell">item1</dd>
-                            <dd class="table-cell">item2</dd>
-                            <dd class="table-cell">item3</dd>
-                        </dl>
-                        <dl class="table-row">
-                            <dt class="table-cell">Row3</dt>
-                            <dd class="table-cell">item1</dd>
-                            <dd class="table-cell">item2</dd>
-                            <dd class="table-cell">item3</dd>
-                        </dl>
-                        <dl class="table-row">
-                            <dt class="table-cell">Row4</dt>
-                            <dd class="table-cell">item1</dd>
-                            <dd class="table-cell">item2</dd>
-                            <dd class="table-cell">item3</dd>
-                        </dl>
-                        <dl class="table-row">
-                            <dt class="table-cell">Row5</dt>
-                            <dd class="table-cell">item1</dd>
-                            <dd class="table-cell">item2</dd>
-                            <dd class="table-cell">item3</dd>
-                        </dl>
-                        <dl class="table-row">
-                            <dt class="table-cell">Row6</dt>
-                            <dd class="table-cell">item1</dd>
-                            <dd class="table-cell">item2</dd>
-                            <dd class="table-cell">item3</dd>
-                        </dl>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-        <div class="mag20-tb">
-            <h3>badge</h3>
-            <p>
-                badge 徽章，这是
-            </p>
-            <label for="">asd <span class="badge">2</span></label>
-        </div>
-        <pre contenteditable="true">1234567890qwertyuiop
+    </div>
+    <div class="mag20-tb">
+      <h3>badge</h3>
+      <p>
+        badge 徽章，这是
+      </p>
+      <label for="">asd <span class="badge">2</span></label>
+    </div>
+    <pre contenteditable="true">1234567890qwertyuiop
           <p>badge 徽章，这是</p></pre>
-        <div contenteditable="true" class="writing-mode-rl" style="width:100%">
-            <h3>远方</h3>
-            <p>&nbsp;期待一个有理想充满挑战的机遇。</p>
-            <p>&nbsp;让我们一起前行。</p>
-            <p>&nbsp;我想做梦，因为我还有梦想。</p>
-            <p>&nbsp;从我的小城市出发。</p>
-            <p>&nbsp;去一个， 去一个期盼已久的地方， </p>
-            <p>&nbsp;感受它的温度，就如老友一般；</p>
-            <p>&nbsp;去一个未曾相见的地方， 感受它的风情， </p>
-            <p>&nbsp;与它相谈甚欢。</p>
-            <p>&nbsp;去轻抚高山， 感受它的巍峨与壮丽； </p>
-            <p>&nbsp;去拥抱大海， 感受它的粼粼波涛和深邃的胸怀。 </p>
-        </div>
-        <div contenteditable="true" class="writing-mode-lr" style="width:400px;">
-            <h3>远方</h3>
-            <p>&nbsp;期待一个有理想充满挑战的机遇。</p>
-            <p>&nbsp;让我们一起前行。</p>
-            <p>&nbsp;我想做梦，因为我还有梦想。</p>
-            <p>&nbsp;从我的小城市出发。</p>
-            <p>&nbsp;去一个， 去一个期盼已久的地方， </p>
-            <p>&nbsp;感受它的温度，就如老友一般；</p>
-            <p>&nbsp;去一个未曾相见的地方， 感受它的风情， </p>
-            <p>&nbsp;与它相谈甚欢。</p>
-            <p>&nbsp;去轻抚高山， 感受它的巍峨与壮丽； </p>
-            <p>&nbsp;去拥抱大海， 感受它的粼粼波涛和深邃的胸怀。 </p>
-        </div>
-
-        <div class="container mag20-tb">
-            <div class="grid-row mag20-tb">
-                <div class="grid-col-1">item1</div>
-                <div class="grid-col-1">item2</div>
-                <div class="grid-col-1">item3</div>
-                <div class="grid-col-1">item4</div>
-                <div class="grid-col-1">item5</div>
-                <div class="grid-col-1">item6</div>
-                <div class="grid-col-1">item7</div>
-                <div class="grid-col-1">item8</div>
-                <div class="grid-col-1">item9</div>
-                <div class="grid-col-1">item10</div>
-                <div class="grid-col-1">item11</div>
-                <div class="grid-col-1">item12</div>
-            </div>
-            <div class="grid-row mag20-tb">
-                <div class="grid-col-2">item1</div>
-                <div class="grid-col-2">item2</div>
-                <div class="grid-col-2">item3</div>
-                <div class="grid-col-2">item4</div>
-                <div class="grid-col-2">item5</div>
-                <div class="grid-col-2">item6</div>
-            </div>
-            <div class="grid-row mag20-tb">
-                <div class="grid-col-3">item1</div>
-                <div class="grid-col-3">item2</div>
-                <div class="grid-col-3">item3</div>
-                <div class="grid-col-3">item4</div>
-            </div>
-            <div class="grid-row mag20-tb">
-                <div class="grid-col-4">item1</div>
-                <div class="grid-col-4">item2</div>
-                <div class="grid-col-4">item3</div>
-            </div>
-            <div class="grid-row mag20-tb">
-                <div class="grid-col-6">item1</div>
-                <div class="grid-col-6">item2</div>
-            </div>
-            <div class="grid-row mag20-tb">
-                <div class="grid-col-12">item1</div>
-            </div>
-        </div>
-
-        <div class="container mag20-tb">
-            <div class="grid-row mag20-tb">
-                <div class="grid-col-3">item1</div>
-                <div class="grid-col-6">item2</div>
-                <div class="grid-col-6">item3</div>
-                <div class="grid-col-4">item4</div>
-                <div class="grid-col-1 hyphenate">sssssssssssssssssssssssssssssssssss</div>
-                <div class="grid-col-1">测试测试测试测试测试测试测试</div>
-            </div>
-        </div>
+    <div contenteditable="true" class="writing-mode-rl" style="width:100%">
+      <h3>远方</h3>
+      <p>&nbsp;期待一个有理想充满挑战的机遇。</p>
+      <p>&nbsp;让我们一起前行。</p>
+      <p>&nbsp;我想做梦，因为我还有梦想。</p>
+      <p>&nbsp;从我的小城市出发。</p>
+      <p>&nbsp;去一个， 去一个期盼已久的地方， </p>
+      <p>&nbsp;感受它的温度，就如老友一般；</p>
+      <p>&nbsp;去一个未曾相见的地方， 感受它的风情， </p>
+      <p>&nbsp;与它相谈甚欢。</p>
+      <p>&nbsp;去轻抚高山， 感受它的巍峨与壮丽； </p>
+      <p>&nbsp;去拥抱大海， 感受它的粼粼波涛和深邃的胸怀。 </p>
     </div>
+    <div contenteditable="true" class="writing-mode-lr" style="width:400px;">
+      <h3>远方</h3>
+      <p>&nbsp;期待一个有理想充满挑战的机遇。</p>
+      <p>&nbsp;让我们一起前行。</p>
+      <p>&nbsp;我想做梦，因为我还有梦想。</p>
+      <p>&nbsp;从我的小城市出发。</p>
+      <p>&nbsp;去一个， 去一个期盼已久的地方， </p>
+      <p>&nbsp;感受它的温度，就如老友一般；</p>
+      <p>&nbsp;去一个未曾相见的地方， 感受它的风情， </p>
+      <p>&nbsp;与它相谈甚欢。</p>
+      <p>&nbsp;去轻抚高山， 感受它的巍峨与壮丽； </p>
+      <p>&nbsp;去拥抱大海， 感受它的粼粼波涛和深邃的胸怀。 </p>
     </div>
 
-    <!-- <div class="shade" data-width="200px" data-height="180px">
+    <div class="container mag20-tb">
+      <div class="grid-row mag20-tb">
+        <div class="grid-col-1">item1</div>
+        <div class="grid-col-1">item2</div>
+        <div class="grid-col-1">item3</div>
+        <div class="grid-col-1">item4</div>
+        <div class="grid-col-1">item5</div>
+        <div class="grid-col-1">item6</div>
+        <div class="grid-col-1">item7</div>
+        <div class="grid-col-1">item8</div>
+        <div class="grid-col-1">item9</div>
+        <div class="grid-col-1">item10</div>
+        <div class="grid-col-1">item11</div>
+        <div class="grid-col-1">item12</div>
+      </div>
+      <div class="grid-row mag20-tb">
+        <div class="grid-col-2">item1</div>
+        <div class="grid-col-2">item2</div>
+        <div class="grid-col-2">item3</div>
+        <div class="grid-col-2">item4</div>
+        <div class="grid-col-2">item5</div>
+        <div class="grid-col-2">item6</div>
+      </div>
+      <div class="grid-row mag20-tb">
+        <div class="grid-col-3">item1</div>
+        <div class="grid-col-3">item2</div>
+        <div class="grid-col-3">item3</div>
+        <div class="grid-col-3">item4</div>
+      </div>
+      <div class="grid-row mag20-tb">
+        <div class="grid-col-4">item1</div>
+        <div class="grid-col-4">item2</div>
+        <div class="grid-col-4">item3</div>
+      </div>
+      <div class="grid-row mag20-tb">
+        <div class="grid-col-6">item1</div>
+        <div class="grid-col-6">item2</div>
+      </div>
+      <div class="grid-row mag20-tb">
+        <div class="grid-col-12">item1</div>
+      </div>
+    </div>
+
+    <div class="container mag20-tb">
+      <div class="grid-row mag20-tb">
+        <div class="grid-col-3">item1</div>
+        <div class="grid-col-6">item2</div>
+        <div class="grid-col-6">item3</div>
+        <div class="grid-col-4">item4</div>
+        <div class="grid-col-1 hyphenate">sssssssssssssssssssssssssssssssssss</div>
+        <div class="grid-col-1">测试测试测试测试测试测试测试</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- <div class="shade" data-width="200px" data-height="180px">
         <div class="shade-bg table-cell">
             <article class="shade-box table">
                 <header class="table-row">title</header>
@@ -487,13 +484,13 @@
             </article>
         </div>
     </div> -->
-    <footer style="background-color:#697896;">
-        <h1>This is footer.</h1>
-    </footer>
-    <script src="js/Cat.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        // console.log(cat(".timeline>.nav").css("background-color","red"));
-    </script>
+  <footer style="background-color:#697896;">
+    <h1>This is footer.</h1>
+  </footer>
+  <script src="js/Cat.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    // console.log(cat(".timeline>.nav").css("background-color","red"));
+  </script>
 </body>
 
 </html>
